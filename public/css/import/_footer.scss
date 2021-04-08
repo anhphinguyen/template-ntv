@@ -5,3 +5,13 @@ footer {
         background-color: #dee2e6;
     }
 }
+
+ul.marker li::before {
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background-color: black;
+    margin-bottom: 3px;
+    border-radius: 50%;
+}

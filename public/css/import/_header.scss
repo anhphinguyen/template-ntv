@@ -7,6 +7,16 @@
     @include witdhBox(82px);
 }
 
+.search {
+    position: relative;
+    .search-btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 100;
+    }
+}
+
 .cart {
     position: relative;
     i {

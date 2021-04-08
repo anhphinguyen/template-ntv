@@ -50,6 +50,10 @@ img {
     font-size: 16px;
 }
 
+.fz-18 {
+    font-size: 18px;
+}
+
 .fz-30 {
     font-size: 30px;
 }
@@ -98,6 +102,31 @@ a:hover {
     line-height: 1.5;
 }
 
+.t-up {
+    text-transform: uppercase;
+}
+
+.t-low {
+    text-transform: lowercase;
+}
+
+.t-cap {
+    text-transform: capitalize;
+}
+
+.t-title {
+    background-color: #009432;
+    color: #fff;
+}
+
+.t-line-throught {
+    text-decoration: line-through;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
 .border-radius-tr-50px {
     border-top-right-radius: 50px;
 }
@@ -115,5 +144,5 @@ a:hover {
 }
 
 .border-radius-50px {
-    border-radius: 50px;
+    border-radius: 50px!important;
 }
