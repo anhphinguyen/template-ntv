@@ -1,0 +1,52 @@
+body {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #286fdb;
+}
+
+#wrapper {
+    width: 230px;
+    margin: 230px auto;
+    background: #f1ecec;
+    padding: 20px 30px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+#form-login #username,
+#password,
+#re-password,
+#email,
+#fullname,
+#gender {
+    width: 100%;
+    padding: 10px 0px;
+    margin-right: 10px;
+    margin-top: 5px;
+    border: none;
+}
+
+#form-login input[type='submit'] {
+    width: 100%;
+    background: #286fdb;
+    color: #f1f2f8;
+    padding: 10px 0px;
+    margin: 15px 0px;
+    cursor: pointer;
+    border: none;
+}
+
+
+/* #form-login #btn_login {
+    width: 100%;
+    background: #286fdb;
+    color: #f1f2f8;
+    padding: 10px 0px;
+    margin: 10px 0px;
+    cursor: pointer;
+    border: none;
+} */
+
+a#lost-pass {
+    color: #4c51eb;
+}

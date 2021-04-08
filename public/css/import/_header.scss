@@ -1,0 +1,26 @@
+@mixin witdhBox($a) {
+    width: 82px;
+    height: 82px;
+}
+
+.logo {
+    @include witdhBox(82px);
+}
+
+.cart {
+    position: relative;
+    i {
+        position: absolute;
+        top: 0;
+        left: 25%;
+    }
+    span {
+        position: absolute;
+        top: -7px;
+        right: 13px;
+        background: #f68110;
+        border-radius: 50px;
+        padding: 4px 6px;
+        font-size: 13px;
+    }
+}
