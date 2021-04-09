@@ -76,6 +76,7 @@
 }
 
 #content {
+  position: relative;
   margin-top: 30px;
 }
 
@@ -94,28 +95,183 @@
 }
 
 #content .box-product {
-  position: relative;
+  width: 262px;
+  height: 315px;
 }
 
 #content .box-product .product-thumb {
   position: absolute;
   top: 0;
   left: 0;
+  display: block;
+  width: 100%;
+  height: 200px;
+  padding: 5px;
+  z-index: 1000;
 }
 
-#content .box-product .product-thumb .sale {
+#content .box-product .product-thumb .sales {
   position: absolute;
   top: 0;
   left: 0;
   background-color: #e0280f;
   z-index: 1000;
+  padding: 6px;
+  color: white;
+  border-bottom-right-radius: 10px;
+  font-weight: 500;
+  font-size: 15px;
 }
 
 #content .box-product .product-thumb img {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 999;
+  z-index: 1;
+  height: 100%;
+}
+
+#content .box-product .buy-and-see {
+  position: absolute;
+  top: 25%;
+  left: 33%;
+  width: 37%;
+  height: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 5px;
+  opacity: 0;
+}
+
+#content .box-product .buy-and-see a {
+  position: absolute;
+  z-index: 1000;
+}
+
+#content .box-product .buy-and-see a.bag {
+  top: 0;
+  left: 0;
+}
+
+#content .box-product .buy-and-see a.eye {
+  top: 0;
+  right: 0;
+}
+
+#content .box-product .buy-and-see a i {
+  padding: 10px;
+  background-color: gray;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+#content .box-product .buy-and-see a:hover i {
+  color: #80bb34 !important;
+  background-color: #fefefe;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+#content .box-product:hover .buy-and-see {
+  opacity: 0.8;
+  z-index: 1000;
+  -webkit-transition: opacity, z-index 0.2s;
+  transition: opacity, z-index 0.2s;
+}
+
+#content .product-desc {
+  position: absolute;
+  bottom: 70px;
+  left: 0;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  z-index: 1001;
+}
+
+#content .product-price {
+  position: absolute;
+  bottom: 32px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+  color: #80bb34;
+}
+
+#content .product-price .product-old-price {
+  color: #111;
+  margin-left: 5px;
+}
+
+#content #banner_2 .row .col a {
+  display: block;
+  border-radius: 17px;
+  overflow: hidden;
+}
+
+#content #post .box-title {
+  position: relative;
+  height: 36px;
+  padding: 0px 13px;
+}
+
+#content #post .box-title .post-line {
+  position: absolute;
+  top: 1em;
+  left: 0;
+  background-color: orange;
+  height: 1px;
+  width: 100%;
+  padding: 1px;
+}
+
+#content #post .box-title .col-2 {
+  position: absolute;
+  top: 0;
+  left: 28em;
+}
+
+#content #post #post-content .box-product {
+  width: 360px;
+  height: 410px;
+}
+
+#content #post #post-content .box-product .product-desc {
+  bottom: 148px !important;
+}
+
+#content #post #post-content .box-product .product-desc-content {
+  position: absolute;
+  bottom: 90px;
+  left: 0;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  z-index: 1001;
+}
+
+#content #post #post-content .box-product button {
+  position: absolute;
+  bottom: 36px;
+  left: 38%;
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 40px;
+  background-color: #80bb34;
+  color: white;
+  font-weight: 500;
 }
 
 .tab-content {
