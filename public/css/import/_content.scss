@@ -2,18 +2,37 @@
     min-height: 500px;
 }
 
-.carousel-control-prev {
-    .carousel-control-prev-icon {
-        background-color: #1c1d1c;
-        color: white;
-        background-size: 50%;
+#content {
+    margin-top: 30px;
+    .nav-link {
+        color: #111;
+        background-color: transparent;
+        transition: all 0.1s;
+        &.active {
+            transform: scale(1.2);
+            color: $mainColor;
+            border-bottom: 1px solid $mainColor;
+        }
     }
-}
-
-.carousel-control-next {
-    .carousel-control-next-icon {
-        background-color: #1c1d1c;
-        color: white;
-        background-size: 50%;
+    .box-product {
+        position: relative;
+        .product-thumb {
+            position: absolute;
+            top: 0;
+            left: 0;
+            .sale {
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: $saleColor;
+                z-index: 1000;
+            }
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 999;
+            }
+        }
     }
 }
